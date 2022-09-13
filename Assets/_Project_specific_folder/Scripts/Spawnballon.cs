@@ -15,11 +15,12 @@ public class Spawnballon : MonoBehaviour
     IEnumerator StartSpawning()
     {
         yield return new WaitForSeconds(4f);
-        //var shuffledList = mSpawnPoints.OrderBy(x => Random.value).ToList();
+        var spawnpoint= mSpawnPoints.OrderBy(x => Random.value).ToList();
         //var shuffledListballon = BalloonPrefabs.OrderBy(x => Random.value).ToList();
+        var shuffledList = BalloonPrefabs.OrderBy(x => Random.value).ToList();
         for (int i = 0; i < mSpawnPoints.Count; i++)
         {
-            Instantiate(BalloonPrefabs[i], mSpawnPoints[i].position, Quaternion.identity);
+            Instantiate(shuffledList[i], spawnpoint[i].position, Quaternion.identity);
         }
         StartCoroutine(StartSpawning());
     }

@@ -8,8 +8,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
-
-
     public Button m_openBallonGame;
     public Button m_opendance;
     private void Awake()
@@ -36,11 +34,5 @@ public class UIManager : MonoBehaviour
     private void dance()
     {
         SceneManager.LoadScene(1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
