@@ -1,11 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class shoot : MonoBehaviour
 {
     public GameObject arCamera;
     public GameObject Smoke;
+
+    public Button exit;
+    private void Start()
+    {
+        exit.onClick.AddListener(goManu);
+    }
+
+    private void goManu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     private void Update()
     {
