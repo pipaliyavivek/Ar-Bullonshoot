@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     public Button m_openBallonGame;
     public Button m_opendance;
+    public Button m_ImageTraacking;
     private void Awake()
     {
         instance = this;
@@ -26,6 +27,11 @@ public class UIManager : MonoBehaviour
     {
         m_opendance.onClick.AddListener(dance);
         m_openBallonGame.onClick.AddListener(ballon);
+        m_ImageTraacking.onClick.AddListener(ImageTracking);
+    }
+    private void ImageTracking()
+    {
+        SceneManager.LoadScene(3);
     }
     private void ballon()
     {

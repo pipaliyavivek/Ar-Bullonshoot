@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/_Project_specific_folder/Scenes/balloon.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/3D AR/Scenes/ds.unity
+    path: Assets/3D AR/Scenes/Dance.unity
     guid: faeebd4b71d64cb41a07af6471648709
+  - enabled: 1
+    path: Assets/3D AR/Scenes/Image Tracking.unity
+    guid: a3337c2dfe4e35043ae0a0bd78c1fa14
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 826577de7e1d6534aae9369f92fa46d6,
       type: 2}
